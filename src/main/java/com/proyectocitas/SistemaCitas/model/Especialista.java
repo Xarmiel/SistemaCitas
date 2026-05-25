@@ -22,5 +22,5 @@ public class Especialista {
     private String especialidad;
 
     @Column(nullable = false, unique = true, length = 20)
-    private int telefono;
+    private String telefono;
 }

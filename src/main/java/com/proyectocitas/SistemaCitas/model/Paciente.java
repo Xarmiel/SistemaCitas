@@ -17,7 +17,7 @@ public class Paciente {
     private Long pacienteId;
 
     @Column(nullable = false, unique = true, length = 8)
-    private int dni;
+    private String dni;
 
     @Column(nullable = false, length = 50)
     private String nombre;
