@@ -1,7 +1,6 @@
 package com.proyectocitas.SistemaCitas.controllers;
 
 import com.proyectocitas.SistemaCitas.model.Cita;
-import com.proyectocitas.SistemaCitas.model.Paciente;
 import com.proyectocitas.SistemaCitas.services.CitaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

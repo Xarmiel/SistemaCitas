@@ -9,7 +9,7 @@ import java.time.OffsetDateTime;
 @Table(name = "pacientes")
 @Data
 
-//Toda la sintaxis esta explicada al detalle en la clase Cita
+//Toda la sintaxis está explicada al detalle en la clase Cita
 public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

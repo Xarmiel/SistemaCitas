@@ -4,9 +4,11 @@ import com.proyectocitas.SistemaCitas.model.Especialista;
 import com.proyectocitas.SistemaCitas.repositories.EspecialistaRepository;
 import com.proyectocitas.SistemaCitas.services.EspecialistaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EspecialistaServiceImpl implements EspecialistaService {
     @Autowired
     private EspecialistaRepository especialistaRepository;
