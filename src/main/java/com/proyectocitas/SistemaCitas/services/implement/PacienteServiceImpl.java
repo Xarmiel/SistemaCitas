@@ -19,7 +19,7 @@ public class PacienteServiceImpl implements PacienteService {
             throw new IllegalArgumentException("El DNI debe tener exactamente 8 dígitos");
         }
 
-        if (pacienteRepository.existByDni(paciente.getDni())) {
+        if (pacienteRepository.existsByDni(paciente.getDni())) {
             throw new IllegalArgumentException("El DNI existe en el sistema");
         }
 

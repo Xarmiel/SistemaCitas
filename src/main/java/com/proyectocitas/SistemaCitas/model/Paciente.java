@@ -26,7 +26,7 @@ public class Paciente {
     private String apellido;
 
     @Column(nullable = false, length = 20)
-    private int telefono;
+    private String telefono;
 
     @Column(name = "fecha_nacimiento", nullable = false)
     private LocalDate fechaNacimiento;
