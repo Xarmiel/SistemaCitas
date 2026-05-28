@@ -30,4 +30,13 @@ public class PacienteServiceImpl implements PacienteService {
     public List<Paciente> listarPacientes() {
         return pacienteRepository.findAll();
     }
+
+    @Override
+    public Paciente buscarPaciente (String dni) {
+        Paciente paciente = pacienteRepository.findByDni(dni);
+        if (paciente == null) {
+            throw new IllegalArgumentException("El DNI no existe en el sistema");
+        }
+        return paciente;
+    }
 }

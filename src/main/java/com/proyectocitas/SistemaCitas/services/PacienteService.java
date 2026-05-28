@@ -6,4 +6,5 @@ import java.util.List;
 public interface PacienteService {
     Paciente registrarPaciente(Paciente paciente);
     List<Paciente> listarPacientes();
+    Paciente buscarPaciente(String dni);
 }

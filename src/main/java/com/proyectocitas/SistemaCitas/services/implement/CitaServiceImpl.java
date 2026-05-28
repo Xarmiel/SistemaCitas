@@ -30,4 +30,21 @@ public class CitaServiceImpl implements CitaService {
     public List<Cita> listarCitas(){
         return citaRepository.findAll();
     }
+
+    @Override
+    public List<Cita> listarCitasPorDni(String dni){
+        return citaRepository.findByPacienteDni(dni);
+    }
+
+    @Override
+    public Cita cambiarEstadoCita (long id, String nuevoEstado) {
+        if(!citaRepository.existsById(id)) {
+            throw new IllegalArgumentException("la cita con ID " + id + " no existe");
+        }
+        Cita cita = citaRepository.findById(id);
+
+        cita.setEstado(nuevoEstado);
+        return citaRepository.save(cita);
+    }
+
 }

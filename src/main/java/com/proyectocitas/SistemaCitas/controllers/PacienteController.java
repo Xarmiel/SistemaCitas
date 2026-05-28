@@ -29,4 +29,14 @@ public class PacienteController {
         List<Paciente> lista = pacienteService.listarPacientes();
         return ResponseEntity.ok(lista);
     }
+
+    @GetMapping("/buscar/{dni}")
+    public ResponseEntity<?> buscarPaciente(@PathVariable String dni) {
+        try {
+            Paciente paciente = pacienteService.buscarPaciente(dni);
+            return ResponseEntity.ok(paciente);
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+    }
 }
