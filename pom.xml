@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.proyectocitas</groupId>
-	<artifactId>SistemaCitas</artifactId>
+	<artifactId>sistema-citas-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
